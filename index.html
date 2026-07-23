@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="snake.png">
+    <title>Snake Game - Classic Arcade Fun</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">🐍 Snake Game</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#how-to-play">How to Play</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#play">Play Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>🐍 Snake Game</h1>
+            <p>The classic arcade game you love, now in your browser!</p>
+            <a href="snake-game.html" class="btn btn-primary">Play Now</a>
+            <a href="#how-to-play" class="btn btn-secondary">Learn More</a>
+        </div>
+        <div class="hero-snake-animation">
+            <div class="snake-demo">
+                <div class="snake-segment head"></div>
+                <div class="snake-segment"></div>
+                <div class="snake-segment"></div>
+                <div class="snake-segment"></div>
+                <div class="snake-segment"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Play Section -->
+    <section id="how-to-play" class="how-to-play">
+        <div class="container">
+            <h2>How to Play</h2>
+            <p class="section-subtitle">Master the snake in 3 simple steps</p>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <div class="step-icon">🎮</div>
+                    <h3>Control the Snake</h3>
+                    <p>Use arrow keys (↑↓←→) to guide your snake around the game board</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <div class="step-icon">🍎</div>
+                    <h3>Eat the Food</h3>
+                    <p>Consume the red food dots to grow longer and score points</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <div class="step-icon">💀</div>
+                    <h3>Avoid Crashes</h3>
+                    <p>Don't hit the walls or your own tail - game over!</p>
+                </div>
+            </div>
+            <div class="controls-detail">
+                <h3>Keyboard Controls</h3>
+                <div class="controls-grid">
+                    <div class="control-item">
+                        <span class="key">↑</span>
+                        <span class="key">↓</span>
+                        <span class="key">←</span>
+                        <span class="key">→</span>
+                        <p>Move the snake</p>
+                    </div>
+                    <div class="control-item">
+                        <span class="key">Space</span>
+                        <p>Pause/Resume</p>
+                    </div>
+                    <div class="control-item">
+                        <span class="key">Enter</span>
+                        <p>Start/Restart game</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Game Features</h2>
+            <p class="section-subtitle">What makes our Snake Game special</p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🏆</div>
+                    <h3>High Score Tracking</h3>
+                    <p>Your best scores are saved locally. Challenge yourself to beat your record!</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📐</div>
+                    <h3>Two Map Sizes</h3>
+                    <p>Choose between Small (300px) for quick games or Large (500px) for more challenge</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Smooth Gameplay</h3>
+                    <p>Fluid animations powered by requestAnimationFrame for the best experience</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <h3>Modern Design</h3>
+                    <p>Beautiful dark theme with glowing effects and smooth color gradients</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🐍</div>
+                    <h3>Expressive Snake</h3>
+                    <p>The snake has eyes that follow its direction for a more engaging experience</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌐</div>
+                    <h3>Play Anywhere</h3>
+                    <p>No installation needed - just open your browser and start playing!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Play Section -->
+    <section id="play" class="play-section">
+        <div class="container">
+            <h2>Ready to Play?</h2>
+            <p class="section-subtitle">Start your snake adventure now!</p>
+            <div class="play-cta">
+                <div class="game-preview-box">
+                    <div class="preview-canvas">
+                        <div class="preview-grid"></div>
+                        <div class="preview-snake"></div>
+                        <div class="preview-food"></div>
+                    </div>
+                </div>
+                <div class="play-button-wrapper">
+                    <a href="snake-game.html" class="btn btn-game">
+                        <span class="btn-icon">🎮</span>
+                        Start Playing
+                        <span class="btn-arrow">→</span>
+                    </a>
+                    <p class="play-text">Click to launch the game in a new page</p>
+                    <div class="stats-preview">
+                        <div class="stat">
+                            <span class="stat-value">∞</span>
+                            <span class="stat-label">Free to Play</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value">🏆</span>
+                            <span class="stat-label">Beat Your High Score</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>🐍 Snake Game - A Classic Arcade Experience</p>
+            <p>&copy; 2024 Snake Game. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
